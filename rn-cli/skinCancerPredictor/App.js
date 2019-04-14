@@ -100,7 +100,7 @@ export default class App extends Component<Props> {
           {
             photo === null && (
               <View>
-                <Text style={styles.instructions}>Get your skin tested right now</Text>
+                <Text style={styles.instructions}>Get your skin tested for right now</Text>
                 {
                   step === 1 &&
                     <Text style={styles.instructions}>Upload an image of the affected area</Text>  
