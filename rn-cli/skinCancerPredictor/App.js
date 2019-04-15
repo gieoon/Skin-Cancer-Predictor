@@ -58,15 +58,15 @@ export default class App extends Component<Props> {
     fetch(URL + ENDPOINT, {
       method: 'POST',
       body: createFormData(this.state.photo, {
-        age: this.state.age,
-        gender: this.state.gender,
-        localization: this.state.localization 
+        //age: this.state.age,
+        //gender: this.state.gender,
+        //localization: this.state.localization 
       })
     })
       .then(response => response.json())
       .then(response => {
         console.log("Uploaded successfully: ", response);
-        alert('Uploaded Successfully');
+        alert('Uploaded Successfully: ', response.params.);
         this.setState({
           photo: null
         })
